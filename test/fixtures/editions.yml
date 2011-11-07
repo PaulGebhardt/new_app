@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  work_id: 1
+  description: MyText
+  publisher: MyText
+  year: 1
+  price: 1
+
+two:
+  work_id: 1
+  description: MyText
+  publisher: MyText
+  year: 1
+  price: 1

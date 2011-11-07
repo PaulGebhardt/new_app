@@ -1,0 +1,31 @@
+<h1>Listing editions</h1>
+
+<table>
+  <tr>
+    <th>Work</th>
+    <th>Description</th>
+    <th>Publisher</th>
+    <th>Year</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @editions.each do |edition| %>
+  <tr>
+    <td><%= edition.work_id %></td>
+    <td><%= edition.description %></td>
+    <td><%= edition.publisher %></td>
+    <td><%= edition.year %></td>
+    <td><%= edition.price %></td>
+    <td><%= link_to 'Show', edition %></td>
+    <td><%= link_to 'Edit', edit_edition_path(edition) %></td>
+    <td><%= link_to 'Destroy', edition, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Edition', new_edition_path %>

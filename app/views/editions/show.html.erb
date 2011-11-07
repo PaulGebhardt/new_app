@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Work:</b>
+  <%= @edition.work_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @edition.description %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%= @edition.publisher %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @edition.year %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @edition.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_edition_path(@edition) %> |
+<%= link_to 'Back', editions_path %>
